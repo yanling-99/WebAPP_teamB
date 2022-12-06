@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+    margin: 0;
 }
 article,
 aside,
@@ -1082,11 +1082,12 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333333;
-  background-color: #fff;
+    font-family: "Times New Roman", Times New Roman, Times New Roman, serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #fff;
+
 }
 input,
 button,
@@ -3158,10 +3159,17 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+    color: #4F4F4F;
+    background-color: #EED8AE;
+    border-color: transparent;
+    height: 40px;
+    width: 550px;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 18px;
+    font-family: 'Times New Roman';
 }
+
 .btn-default:focus,
 .btn-default.focus {
   color: #333;
@@ -3169,9 +3177,9 @@ fieldset[disabled] a.btn {
   border-color: #8c8c8c;
 }
 .btn-default:hover {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+    color: #333;
+    background-color: #FFFAF0;
+    border-color: #FFFAF0;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3563,18 +3571,18 @@ tbody.collapse.in {
   display: table-row-group;
 }
 .collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition-property: height, visibility;
-  -o-transition-property: height, visibility;
-  transition-property: height, visibility;
-  -webkit-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+    position: relative;
+    height: 0;
+    overflow: hidden !important;
+    -webkit-transition-property: height, visibility;
+    -o-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 .caret {
   display: inline-block;
@@ -4275,11 +4283,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     box-shadow: none;
   }
   .navbar-collapse.collapse {
-    display: block !important;
+    display: block!important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
   }
+.navbar-collapse.collapse.in {
+    display: block !important;
+}
   .navbar-collapse.in {
     overflow-y: visible;
   }
@@ -4351,7 +4362,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
   height: 50px;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 36px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4398,6 +4409,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+}
+.navbar-nav > li {
+    float: none;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4546,6 +4560,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 14px;
 }
 .navbar-text {
+    float:none;
+    margin:15px 0;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -4665,11 +4681,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+    background-color: #CAE1FF;
+    border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+    color: #FFDAB9;
+    font-weight: bold;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
@@ -4680,7 +4697,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d;
+    color: #FFDAB9;
+    font-family: "Times New Roman",Times New Roman,Times New Roman,serif;
+    font-size: 18px
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -6831,4 +6850,17 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+@media (max-width: 1280px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+}
+    /*# sourceMappingURL=bootstrap.css.map */

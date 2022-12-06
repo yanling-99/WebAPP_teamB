@@ -4,7 +4,7 @@
 
 <html lang="zh">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - 我的 ASP.NET 應用程式</title>
@@ -15,9 +15,8 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
 </head>
-<body>
+<body style="background-color: #FFEFDB;">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -39,29 +38,30 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#8B5A2B; border-color:transparent" >
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header" >
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="其他選項">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/"><font size="5" color="#a9bcf7"><b>OPEA+</b></font><br><br></a>
+                    <a class="navbar-brand " runat="server" href="~/Home">OTEA+<br><br></a>
                     
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/"><font color="#a9bcf7">Home</font></a></li>
-                        <li><a runat="server" href="~/About"><font color="#a9bcf7">About</font></a></li>
-                        <li><a runat="server" href="~/Product/search"><font color="#a9bcf7">ProductSearch</font></a></li>
-                        <li><a runat="server" href="~/Product/edit"><font color="#a9bcf7">ProductEdit</font></a></li>
-                        <li><a runat="server" href="~/Trans/search"><font color="#a9bcf7">TransSearch</font></a></li>
-                        <li><a runat="server" href="~/Oder/search"><font color="#a9bcf7">OderSearch</font></a></li>
-                        <li><a runat="server" href="~/Communication"><font color="#a9bcf7">Communication</font></a></li>
-                        <%-- <li><a runat="server" href="~/Signup"><font color="#a9bcf7">Sign up</font></a></li>--%>
-                        <li><a runat="server" href="~/Signin"><font color="#a9bcf7">Sign in</font></a></li>
-                        <li><a runat="server" href="~/Contact"><font color="#a9bcf7">Contact</font></a></li>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li><a runat="server" href="~/Home">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Product/search">ProductSearch</a></li>
+                        <li><a runat="server" href="~/Product/edit">ProductEdit</a></li>
+                        <li><a runat="server" href="~/Trans/search"> TransSearch</a></li>
+                        <li><a runat="server" href="~/Oder/search"> OderSearch</a></li>
+                        <li><a runat="server" href="~/Communication"> Communication</a></li>
+                        <%-- <li><a runat="server" href="~/Signup"><font color="#FFDAB9">Sign up</a></li>--%>
+                        <li><a runat="server" href="~/Login"> Login</a></li>
+                        <li><a runat="server" href="~/Contact"> Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,9 +69,9 @@
 
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Taiwan Tech CCE Information Technology Department — TeamB</p>
+            <hr / style="border-top-color:#B5B5B5">
+            <footer >
+                <p style="color:#696969">&copy; <%: DateTime.Now.Year %> - Taiwan Tech CCE Information Technology Department — TeamB</p>
             </footer>
         </div>
 

@@ -1,42 +1,39 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication_B._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="WebApplication_B._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="jumbotron">
-        <h2>ASP.NET</h2>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server"> <br />
+    
+    
+    <div class="jumbotron" style="background-color:#FFFAFA">
+        <font size="72" face="Times New Roman" color="#8B5A2B"><b>Used Textbook Trading Platform</b></font><br />
+        <br />
+        <font size="5" face="Times New Roman" color="#8B5A2B">Promote Taiwanese Engineers in Civil Construction to connect with the world.</font>
     </div>
 
     <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
+        <div class="col-md-6">
+            <h2><b><font face="Times New Roman" color="#8B5A2B">Latest News</font></b></h2>
             <p>
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                <p>
+                    <a class="btn btn-default" href="http://localhost:61218/About">New Event on 18 October 2022 >></a>
+                </p>
             </p>
         </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
+
+        <div class="col-md-6">
+            <h2><b><font face="Times New Roman" color="#8B5A2B">Latest News</font></b></h2>
             <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                <p>
+                    <a class="btn btn-default" href="http://localhost:61218/About">New Event on 18 October 2022 >></a>
+                </p>
+                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
+                 A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
             </p>
         </div>
     </div>
+        
+
+    
 
 </asp:Content>
