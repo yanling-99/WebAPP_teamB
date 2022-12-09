@@ -24,11 +24,11 @@
         <div class="col-md-6">
             <h2><b><font face="Times New Roman" color="#8B5A2B">Latest News</font></b></h2>
             <p>
+                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
+                 A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
                 <p>
                     <a class="btn btn-default" href="http://localhost:61218/About">New Event on 18 October 2022 >></a>
                 </p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                 A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
             </p>
         </div>
     </div>
