@@ -54,12 +54,11 @@
                     <ul class="nav navbar-nav navbar-right" >
                         <li><a runat="server" href="~/Home">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Product/search">ProductSearch</a></li>
-                        <li><a runat="server" href="~/Product/edit">ProductEdit</a></li>
-                        <li><a runat="server" href="~/Trans/search"> TransSearch</a></li>
-                        <li><a runat="server" href="~/Oder/search"> OderSearch</a></li>
+                        <li><a runat="server" href="~/Product/search">Product Search</a></li>
+                        <li><a runat="server" href="~/Product/edit">Product Edit</a></li>
+                        <li><a runat="server" href="~/Trans/search"> Trans Search</a></li>
+                        <li><a runat="server" href="~/Order/search"> Order Search</a></li>
                         <li><a runat="server" href="~/Communication"> Communication</a></li>
-                        <%-- <li><a runat="server" href="~/Signup"><font color="#FFDAB9">Sign up</a></li>--%>
                         <li><a runat="server" href="~/Login"> Login</a></li>
                         <li><a runat="server" href="~/Contact"> Contact</a></li>
                     </ul>

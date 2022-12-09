@@ -1085,9 +1085,8 @@ body {
     font-family: "Times New Roman", Times New Roman, Times New Roman, serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #333333;
+    color: #8B5A2B;
     background-color: #fff;
-
 }
 input,
 button,
@@ -4364,6 +4363,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 36px;
   line-height: 20px;
+  padding-top-family: 'Microsoft JhengHei UI';
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -5050,12 +5050,23 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+.tabPage {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    margin-bottom: 30px;
+}
+.tabPage h2 {
+    text-align: center;
+    font-family:'Times New Roman';
+    font-size:24px;
+}
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eeeeee;
 }
 .jumbotron h1,
 .jumbotron .h1 {

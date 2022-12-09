@@ -4,31 +4,37 @@
     
     
     <div class="jumbotron" style="background-color:#FFFAFA">
-        <font size="72" face="Times New Roman" color="#8B5A2B"><b>Used Textbook Trading Platform</b></font><br />
+        <font size="72" face="Times New Roman" color="#8B5A2B"><b>Used Textbook Trading Platform</b></font>
+        <br />
         <br />
         <font size="5" face="Times New Roman" color="#8B5A2B">Promote Taiwanese Engineers in Civil Construction to connect with the world.</font>
     </div>
 
+    <div class="section" style="text-align:center">
+        <img src="Image/communication.jpg" style="width:1170px">
+    </div>
+
+    <br />
     <div class="row">
         <div class="col-md-6">
             <h2><b><font face="Times New Roman" color="#8B5A2B">Latest News</font></b></h2>
-            <p>
+            <p style="font-size:17px">
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
                 A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                <p>
-                    <a class="btn btn-default" href="http://localhost:61218/About">New Event on 18 October 2022 >></a>
-                </p>
+            </p>
+            <p>
+                <a class="btn btn-default" href="http://localhost:61218/About">New Event on 18 October 2022 >></a>
             </p>
         </div>
 
         <div class="col-md-6">
-            <h2><b><font face="Times New Roman" color="#8B5A2B">Latest News</font></b></h2>
-            <p>
+            <h2><b><font face="Times New Roman" color="#8B5A2B">Event</font></b></h2>
+            <p style="font-size:17px">
                 ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
                  A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                <p>
-                    <a class="btn btn-default" href="http://localhost:61218/About">New Event on 18 October 2022 >></a>
-                </p>
+            </p>
+            <p>
+                <a class="btn btn-default" href="http://localhost:61218/Contact">New Event on 18 October 2022 >></a>
             </p>
         </div>
     </div>

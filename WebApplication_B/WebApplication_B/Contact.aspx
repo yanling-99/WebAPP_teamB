@@ -1,24 +1,26 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="WebApplication_B.Contact" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" >
     <br />
-    <br/><h2><b style="color:#363636">Contact us</b></h2><br />
-     <%-- <h4>Welcome to contact us.</h4>--%>
-     <div class="jumbotron" style="background-color:#696969; height:400px; text-align:center">
-        <font size="5" face="Arial" color="#FFFAFA" >Drop us a line!</font>
-      
-     </div>
+
+    <br/><h2><b style="color:#8B5A2B">Contact us</b></h2><br />
+
+    
+    <div class="jumbotron" style="background-color:#FFDAB9;width:800px; height:400px; text-align:center;  padding-top:30px">
+        <font size="6" face="Times New Roman" color="#8B5A2B">Drop us a line!</font>
+    </div>
+
 
     <br /><br />
 
     <p style="font-size:18px; font-family:'Times New Roman'; color:#4F4F4F">
-        <strong>Asked Questions About OTEA+ Used Textbook Trading.</strong><br />
-        Please reach us at info.textbook@otea+.network if you cannot find an answer to your question.
+        <strong>Ask Questions About OTEA+ Using Textbook Trading.</strong><br />
+        Please contact us by info.textbook@otea+.network if you cannot find an answer to your question.
     </p>
     <br />
     <p style="font-size:18px; font-family:'Times New Roman'; color:#4F4F4F">
-        <strong>Asked Questions About OTEA+.</strong><br />
-        Please reach us at <a  href="http://localhost:61218/Home">info@otea+.network</a> if you cannot find an answer to your question.
+        <strong>Ask Questions About OTEA+.</strong><br />
+        Please contact us by <a  href="http://localhost:61218/Home">info@otea+.network</a> if you cannot find an answer to your question.
     </p>
     <br /><br /><br /><br /><br /><br /><br />
 

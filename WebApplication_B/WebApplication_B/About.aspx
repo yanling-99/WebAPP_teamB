@@ -8,19 +8,56 @@
         <br /><br />
         <font size="5" face="Times New Roman" color="#FFFAFA">An organization for promote Taiwanese Engineers in Civil Construction to connect with the world.</font>
     </div>
-    <br/><h2><b style="color:#8B5A2B">Overseas Taiwanese Engineer Association</b></h2><br />
-    <p  style="font-size:18px; font-family:'Times New Roman'; color:#8B5A2B">
-        Do you feel uncomfortable with the new environment Should you step into a foreign country for the first time to study? <br />
-        Let us find you social networks that can help you!
+
+
+    <div class="section" style="text-align:center">
+        <img src="Image/9.jpg" style="width:1170px">
+    </div>
+    
+
+    <h2><b style="color:#8B5A2B">Overseas Taiwanese Engineer Association</b></h2>
+    <p  style="font-size:20px; font-family:'Times New Roman'; color:#8B5A2B">
+        Do you feel uncomfortable with the new environment?<br />
+        Should you go abroad for the first time to study? <br />
+        Let us help you to find your own social network!
     </p>
+
+    <br /><br /><br />
+
+    <div class="tabPage">
+        <h2><b>Our Services</b></h2>
+        <br />
+
+        <div class="row" style="text-align:center">
+            <div class="col-md-4">
+                <p>
+                    <img src="Image/4.jpg" style="width:350px">
+                </p>
+                <p style="font-size:18px; font-family:'Times New Roman'; color:#8B5A2B; font-weight:bold">
+                   Networking Events Interact with Real People
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    <img src="Image/6.jpg" style="width:350px; height:200px" >
+                </p>
+                <p style="font-size:18px; font-family:'Times New Roman'; color:#8B5A2B; font-weight:bold">
+                   Share Useful Informations
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    <img src="Image/8.jpg" style="width:350px">
+                </p>
+                <p style="font-size:18px; font-family:'Times New Roman'; color:#8B5A2B; font-weight:bold">
+                   Textbook Trading and Free Coupons
+                </p>
+            </div>
+        </div>
+    </div>
+
     <br />
-    <p style="font-size:18px; font-family:'Times New Roman'; color:#8B5A2B">
-        <strong  style="font-size:26px">We Provide：</strong><br />
-        1. Networking Events Interact with Real People<br />
-        2. Share Useful Information<br />
-        3. Used Textbook Trading
-        <br /><br />
-    </p>
+    
     <p style="font-size:18px; font-family:'Times New Roman'; color:#8B5A2B">
         Above services currently only available in North America.<br />
         We invite you to join us, and become part of this big family!
