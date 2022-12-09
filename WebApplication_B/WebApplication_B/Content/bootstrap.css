@@ -1585,6 +1585,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top:25px;
 }
 @media (min-width: 768px) {
   .container {
@@ -1667,7 +1668,7 @@ pre code {
 .col-sm-12,
 .col-md-12,
 .col-lg-12 {
-  position: relative;
+  position:static;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
@@ -2609,13 +2610,37 @@ label {
   margin-bottom: 5px;
   font-weight: 700;
 }
+p input {
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    color: #303030;
+    font-family: 'Times New Roman';
+    border-color: transparent;
+}
+div button {
+    width: 100px;
+    height: 30px;
+    background-color: snow;
+    border-color: lightgray;
+    color: #8B5A2B;
+    font-size: 16px
+}
+div textarea {
+    width: 400px;
+    height:150px;
+    font-size: 18px;
+    color: #303030;
+    font-family: 'Times New Roman';
+    border-color: transparent;
+}
 input[type="search"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -3596,31 +3621,31 @@ tbody.collapse.in {
 }
 .dropup,
 .dropdown {
-  position: relative;
+    /*position: relative;*/
+    position: relative;
 }
 .dropdown-toggle:focus {
   outline: 0;
 }
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  font-size: 14px;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    position: absolute; /*設定絕對定位，相對於父元素div.dropdown*/
+    top: 100%; /*讓下拉式選單項在父選單項底部，如果父元素不設定相對定位，該元素相對於body元素*/
+    left: 0;
+    z-index: 1000; /*讓下拉式選單項不被其他元素遮蓋住*/
+    display: none; /*預設隱藏下拉式選單項*/
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -3628,19 +3653,22 @@ tbody.collapse.in {
 }
 .dropdown-menu .divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 9px 9px;
   overflow: hidden;
   background-color: #e5e5e5;
 }
-.dropdown-menu > li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: 400;
-  line-height: 1.42857143;
-  color: #333333;
-  white-space: nowrap;
-}
+    .dropdown-menu > li > a {
+        display: block;
+        padding: 3px ;
+        clear: both;
+        color: #8B5A2B;
+        font-weight: 400;
+        line-height: 1.42857143;
+        white-space: nowrap;
+        font-family: 'Times New Roman';
+        font-size: 18px;
+        text-align:center;
+    }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #262626;
@@ -3666,7 +3694,6 @@ tbody.collapse.in {
   cursor: not-allowed;
   background-color: transparent;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .open > .dropdown-menu {
   display: block;
@@ -4249,7 +4276,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4358,12 +4385,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-brand {
-  float: left;
-  height: 50px;
-  padding: 15px 15px;
-  font-size: 36px;
-  line-height: 20px;
-  padding-top-family: 'Microsoft JhengHei UI';
+    float: left;
+    height: 50px;
+    padding-top: 13px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    font-size: 36px;
+    line-height: 20px;
+    font-weight:bold;
+    font-family:'Times New Roman';
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4697,8 +4728,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #FFDAB9;
-    font-family: "Times New Roman",Times New Roman,Times New Roman,serif;
     font-size: 18px
 }
 .navbar-inverse .navbar-nav > li > a:hover,

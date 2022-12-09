@@ -3,6 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server"> <br />
     
     
+    <%-- 標題 --%>
     <div class="jumbotron" style="background-color:#FFFAFA">
         <font size="72" face="Times New Roman" color="#8B5A2B"><b>Used Textbook Trading Platform</b></font>
         <br />
@@ -10,12 +11,15 @@
         <font size="5" face="Times New Roman" color="#8B5A2B">Promote Taiwanese Engineers in Civil Construction to connect with the world.</font>
     </div>
 
+    <%-- 照片 --%>
     <div class="section" style="text-align:center">
         <img src="Image/communication.jpg" style="width:1170px">
     </div>
 
     <br />
+    
     <div class="row">
+        <%-- 最新消息 --%>
         <div class="col-md-6">
             <h2><b><font face="Times New Roman" color="#8B5A2B">Latest News</font></b></h2>
             <p style="font-size:17px">
@@ -27,6 +31,7 @@
             </p>
         </div>
 
+         <%-- 活動 --%>
         <div class="col-md-6">
             <h2><b><font face="Times New Roman" color="#8B5A2B">Event</font></b></h2>
             <p style="font-size:17px">

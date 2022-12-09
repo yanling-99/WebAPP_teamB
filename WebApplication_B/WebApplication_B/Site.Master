@@ -39,30 +39,116 @@
         </asp:ScriptManager>
 
         <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#8B5A2B; border-color:transparent" >
-            <div class="container">
+            <div class="container" style="vertical-align:middle">
                 <div class="navbar-header" >
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="其他選項">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="其他選項"
+                        style="width:45px; height:50px">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                     <%-- 標題LOGO --%>
                     <a class="navbar-brand " runat="server" href="~/Home">OTEA+<br><br></a>
                     
                 </div>
 
-                <div class="collapse navbar-collapse">
+                <%-- 下拉選單 --%>
+                <div class="collapse navbar-collapse" >
+                    <%-- 下拉選單  Product --%>
+                    <div class="nav navbar-nav " style="padding-left:20px; padding-top:5px">
+                        <div class="dropdown">
+                            <button id="dLabel"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                                style="font-size:20px; width:120px; height:30px; border-color:transparent; background-color:#8B5A2B; color:#FFDAB9">
+                                Product
+                                <span class="caret"></span>
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">Edit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <%--  下拉選單  Trans  --%>
+                    <div class="nav navbar-nav " style=" padding-top:5px">
+                        <div class="dropdown">
+                            <button id="dLabe2"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                                style="font-size:20px; width:160px; height:30px; border-color:transparent; background-color:#8B5A2B; color:#FFDAB9">
+                                Transaction
+                                <span class="caret"></span>
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="dLabe2">
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">Edit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                     <%--  下拉選單  Users  --%>
+                    <div class="nav navbar-nav " style=" padding-top:5px">
+                        <div class="dropdown">
+                            <button id="dLabe3"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                                style="font-size:20px; width:90px; height:30px; border-color:transparent; background-color:#8B5A2B; color:#FFDAB9">
+                                User
+                                <span class="caret"></span>
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="dLabe3">
+                                <li><a href="#">Edit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <%--  下拉選單  Order  --%>
+                    <div class="nav navbar-nav " style=" padding-top:5px">
+                        <div class="dropdown">
+                            <button id="dLabe4"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                                style="font-size:20px; width:90px; height:30px; border-color:transparent; background-color:#8B5A2B; color:#FFDAB9">
+                                Order
+                                <span class="caret"></span>
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="dLabe4">
+                                <li><a href="#">Edit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <%-- 單一選單 About --%>
+                    <ul class="nav navbar-nav " style=" padding-top:5px">
+                        <li><a runat="server" href="~/About" style="font-size:20px; color:#FFDAB9; padding-left:-5px; padding-top:8px">About</a></li>
+                        <li><a runat="server" href="~/Contact" style="font-size:20px; color:#FFDAB9; padding-left:-5px; padding-top:8px">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right" style=" padding-top:5px">
+                        <li><a runat="server" href="#" style="font-size:20px; color:#FFDAB9; padding-left:-5px; padding-top:8px"> Login/Signup</a></li>
+                    </ul>
+
+                </div>
+
+
+
+=
+
+
+                <%-- 單一選單 --%>
+                <%--<div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right" >
                         <li><a runat="server" href="~/Home">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Product/search">Product Search</a></li>
-                        <li><a runat="server" href="~/Product/edit">Product Edit</a></li>
-                        <li><a runat="server" href="~/Trans/search"> Trans Search</a></li>
-                        <li><a runat="server" href="~/Order/search"> Order Search</a></li>
-                        <li><a runat="server" href="~/Communication"> Communication</a></li>
-                        <li><a runat="server" href="~/Login"> Login</a></li>
+                        <li><a runat="server" href="~/Product/Search">ProductSearch</a></li>
+                        <li><a runat="server" href="~/Product/Edit">ProductEdit</a></li>
+                        <li><a runat="server" href="~/Trans/Edit"> TransEdit</a></li>
+                        <li><a runat="server" href="~/User/Edit"> UserEdit</a></li>
+                        <li><a runat="server" href="~/Trans/Search"> TransSearch</a></li>
+                        <li><a runat="server" href="~/Order/Management"> OrderManagement</a></li>
+                        <%--<li><a runat="server" href="~/Login"> Login</a></li>
                         <li><a runat="server" href="~/Contact"> Contact</a></li>
                     </ul>
-                </div>
+                </div>--%>
             </div>
         </div>
 
