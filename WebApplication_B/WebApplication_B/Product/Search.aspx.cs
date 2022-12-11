@@ -13,5 +13,33 @@ namespace WebApplication_B.Product
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (DropDownList1.Text == "bookID")
+            {
+                GridView1.DataSource = SqlDataSource2;
+            }
+            else if (DropDownList1.Text == "title")
+            {
+                GridView1.DataSource = SqlDataSource1;
+            }
+            else if(DropDownList1.Text == "condition")
+            {
+                GridView1.DataSource = SqlDataSource4;
+            }
+            else if(DropDownList1.Text == "location")
+            {
+                GridView1.DataSource = SqlDataSource3;
+            }
+            GridView1.DataBind();
+
+            if(TextBox1.Text == "" || DropDownList1.Text == "please select")
+                SearchResult.Visible = false;
+            else
+                SearchResult.Visible = true;    
+        }
+
+
     }
 }

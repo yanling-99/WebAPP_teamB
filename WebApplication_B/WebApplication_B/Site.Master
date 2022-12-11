@@ -150,15 +150,11 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
         </div>
-    </form>
-
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="ClearContent" runat="server"></asp:ContentPlaceHolder>
-        </div>
-
         <hr / style="border-top-color:#B5B5B5">
         <footer >
             <p style="color:#696969">&copy; <%: DateTime.Now.Year %> - Taiwan Tech CCE Information Technology Department — TeamB</p>
         </footer>
+    </form>  
+
 </body>
 </html>
