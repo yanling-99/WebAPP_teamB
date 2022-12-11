@@ -16,12 +16,22 @@
         <div class="row">
             <div class="col-md-6">
                 <p>
-                    <label for="name" style="font-size:20px">Your Name</label><br />
-                    <input type="text" name="name" placeholder="Enter your name.">
+                    <label for="name" style="font-size:20px;">Your Name</label><br />
+                    <input type="text" name="name" placeholder="Enter your name." 
+                            style="width: 300px;
+                                height: 40px;
+                                font-size: 18px;
+                                color: #303030;
+                                border-color: transparent;">
                     <br /><br />
 
                     <label for="email" style="font-size:20px" >E-mail</label><br />
-                    <input type="text" name="email" placeholder="Enter your email.">
+                    <input type="text" name="email" placeholder="Enter your email."
+                        style="width: 300px;
+                                height: 40px;
+                                font-size: 18px;
+                                color: #303030;
+                                border-color: transparent;">
                     <br /><br />
 
                     <label for="file" style="font-size:20px">Upload File</label><br />
@@ -34,7 +44,7 @@
                 <textarea name="message" rows="5" cols="30"></textarea>
                 <br /><br /><br />
 
-                <button type="submit" name="submit">Submit</button>
+                <input id="SubmitMessage" type="submit" value="Submit" style="width: 100px;height: 30px;background-color: snow;border-color: lightgray;color: #8B5A2B;font-size: 16px" ><br />
             </div>
         </div>
         <%--<div class="row">
@@ -79,8 +89,8 @@
     </address>
 
     <address>
-        <strong>Phone:</strong>0900-123-456<br />
-        <strong>Support:</strong>   <a href="mailto:M11005510@email.ntust.edu.tw">M11005510@email.ntust.edu.tw</a><br />
-        <strong>Marketing:</strong> <a href="mailto:M11105101@email.ntust.edu.tw">M11105101@email.ntust.edu.tw</a>
+        <strong style="color:black"> Phone:</strong><h style="color:black">0900-123-456</h><br />
+        <strong style="color:black">Support:</strong>   <a href="mailto:M11005510@email.ntust.edu.tw">M11005510@email.ntust.edu.tw</a><br />
+        <strong style="color:black">Marketing:</strong> <a href="mailto:M11105101@email.ntust.edu.tw">M11105101@email.ntust.edu.tw</a>
     </address>
 </asp:Content>

@@ -42,12 +42,12 @@
             <div class="container" style="vertical-align:middle">
                 <div class="navbar-header" >
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="其他選項"
-                        style="width:45px; height:50px">
+                        style="width:45px; height:50px;  border-color:#FFDAB9">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                     <%-- 標題LOGO --%>
+                     <%-- 標題LOGO OTEA+--%>
                     <a class="navbar-brand " runat="server" href="~/Home">OTEA+<br><br></a>
                     
                 </div>
@@ -55,84 +55,79 @@
                 <%-- 下拉選單 --%>
                 <div class="collapse navbar-collapse" >
                     <%-- 下拉選單  Product --%>
-                    <div class="nav navbar-nav " style="padding-left:20px; padding-top:5px">
+                    <div class="nav navbar-nav " style="padding-left:20px">
                         <div class="dropdown">
                             <button id="dLabel"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-                                style="font-size:20px; width:120px; height:30px; border-color:transparent; background-color:#8B5A2B; color:#FFDAB9">
+                                style="font-size:20px; width:120px; height:30px; border-color:transparent; background-color:#8B5A2B">
                                 Product
                                 <span class="caret"></span>
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li><a href="#">Search</a></li>
-                                <li><a href="#">Edit</a></li>
+                                <li><a runat="server" href="~/Product/Search">Search</a></li>
+                                <li><a runat="server" href="#">Edit</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <%--  下拉選單  Trans  --%>
-                    <div class="nav navbar-nav " style=" padding-top:5px">
+                    <div class="nav navbar-nav " >
                         <div class="dropdown">
                             <button id="dLabe2"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-                                style="font-size:20px; width:160px; height:30px; border-color:transparent; background-color:#8B5A2B; color:#FFDAB9">
+                                style="font-size:20px; width:160px; height:30px; border-color:transparent; background-color:#8B5A2B">
                                 Transaction
                                 <span class="caret"></span>
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabe2">
-                                <li><a href="#">Search</a></li>
-                                <li><a href="#">Edit</a></li>
+                                <li><a runat="server" href="#">Search</a></li>
+                                <li><a runat="server" href="#">Edit</a></li>
                             </ul>
                         </div>
                     </div>
 
 
                      <%--  下拉選單  Users  --%>
-                    <div class="nav navbar-nav " style=" padding-top:5px">
+                    <div class="nav navbar-nav " >
                         <div class="dropdown">
                             <button id="dLabe3"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-                                style="font-size:20px; width:90px; height:30px; border-color:transparent; background-color:#8B5A2B; color:#FFDAB9">
+                                style="font-size:20px; width:90px; height:30px; border-color:transparent; background-color:#8B5A2B">
                                 User
                                 <span class="caret"></span>
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabe3">
-                                <li><a href="#">Edit</a></li>
+                                <li><a runat="server" href="#">Edit</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <%--  下拉選單  Order  --%>
-                    <div class="nav navbar-nav " style=" padding-top:5px">
+                    <div class="nav navbar-nav " >
                         <div class="dropdown">
                             <button id="dLabe4"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-                                style="font-size:20px; width:90px; height:30px; border-color:transparent; background-color:#8B5A2B; color:#FFDAB9">
+                                style="font-size:20px; width:90px; height:30px; border-color:transparent; background-color:#8B5A2B">
                                 Order
                                 <span class="caret"></span>
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabe4">
-                                <li><a href="#">Edit</a></li>
+                                <li><a runat="server" href="#">Edit</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <%-- 單一選單 About --%>
-                    <ul class="nav navbar-nav " style=" padding-top:5px">
-                        <li><a runat="server" href="~/About" style="font-size:20px; color:#FFDAB9; padding-left:-5px; padding-top:8px">About</a></li>
-                        <li><a runat="server" href="~/Contact" style="font-size:20px; color:#FFDAB9; padding-left:-5px; padding-top:8px">Contact</a></li>
+                    <%-- 單一選單 About Contact--%>
+                    <ul class="nav navbar-nav " >
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
-
-                    <ul class="nav navbar-nav navbar-right" style=" padding-top:5px">
-                        <li><a runat="server" href="#" style="font-size:20px; color:#FFDAB9; padding-left:-5px; padding-top:8px"> Login/Signup</a></li>
+                    <%-- 單一選單 Login/Signup--%>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="#" > Login/Signup</a></li>
                     </ul>
 
                 </div>
-
-
-
-=
-
 
                 <%-- 單一選單 --%>
                 <%--<div class="collapse navbar-collapse">
@@ -154,12 +149,16 @@
 
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
-            <hr / style="border-top-color:#B5B5B5">
-            <footer >
-                <p style="color:#696969">&copy; <%: DateTime.Now.Year %> - Taiwan Tech CCE Information Technology Department — TeamB</p>
-            </footer>
+        </div>
+    </form>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="ClearContent" runat="server"></asp:ContentPlaceHolder>
         </div>
 
-    </form>
+        <hr / style="border-top-color:#B5B5B5">
+        <footer >
+            <p style="color:#696969">&copy; <%: DateTime.Now.Year %> - Taiwan Tech CCE Information Technology Department — TeamB</p>
+        </footer>
 </body>
 </html>
