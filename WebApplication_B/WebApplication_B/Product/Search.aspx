@@ -13,8 +13,8 @@
 
     
     <p>
-        <h style="font-size: 20px; font-weight: bold">Search by</h>
-        <asp:DropDownList ID="DropDownList1" runat="server" width="200px" Height="30px" Font-Size="20px" >
+        <h style="font-size: 18px; font-weight: bold">Search by</h>
+        <asp:DropDownList ID="DropDownList1" runat="server" width="200px" Height="30px" Font-Size="18px" >
             <asp:ListItem>please select</asp:ListItem>
             <asp:ListItem>bookID</asp:ListItem>
             <asp:ListItem>title</asp:ListItem>
@@ -24,23 +24,28 @@
         <br />
         <br />
 
-        <h style="font-size: 20px; font-weight: bold">keyword</h>
+        <h style="font-size: 18px; font-weight: bold">keyword</h>
         <asp:TextBox ID="TextBox1" runat="server" Font-Size="Larger" Width="200px" Height="30px"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" Text="Search" Width="100px" Height="35px" Font-Size="Large" OnClick="Button1_Click" />
     </p>
     
-
-    <asp:Label ID="SearchResult" runat="server" Text="Search Result :" Font-Size="X-Large" Font-Bold="True" Visible="False"></asp:Label>
     <br /><br />
+    <asp:Label ID="SearchResult" runat="server" Text="Search Result :" Font-Size="X-Large" Font-Bold="True" Visible="False"></asp:Label>
+    <br />
 
-    <asp:GridView ID="GridView1" runat="server" Enabled="False" Width="1200px">
-        
-    </asp:GridView>
+    <div style="text-align:center; font-size:18px">
+        <asp:GridView ID="GridView1" runat="server" Enabled="False" Width="1200px">
+            <EmptyDataTemplate>
+                No Result
+            </EmptyDataTemplate>
+            <HeaderStyle BackColor="#8B5A2B" ForeColor="#FFFAFA" VerticalAlign="Middle" />
+        </asp:GridView>
+    </div>
     
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
         SelectCommand="SELECT Product.id AS bookID, Product.title, PaymentType.typename AS payment, Product.condition, Region.location AS city, Product.price 
                        FROM Product, PaymentType, Region 
-                       WHERE Product.title LIKE '%' + @title + '%'  AND Product.paymentID = PaymentType.id AND Region.id=Product.countryID" >
+                       WHERE Product.title LIKE '%' + @title + '%'  AND Product.paymentID = PaymentType.id AND Region.id=Product.countryID">
         <SelectParameters>
             <asp:ControlParameter ControlID="TextBox1" PropertyName="Text" Name="title" Type="String"></asp:ControlParameter>
         </SelectParameters>

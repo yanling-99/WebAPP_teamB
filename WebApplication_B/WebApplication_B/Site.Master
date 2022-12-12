@@ -65,7 +65,7 @@
 
                             <ul class="dropdown-menu" aria-labelledby="dLabel">
                                 <li><a runat="server" href="~/Product/Search">Search</a></li>
-                                <li><a runat="server" href="#">Edit</a></li>
+                                <li><a runat="server" href="~/Product/Edit">Edit</a></li>
                             </ul>
                         </div>
                     </div>
