@@ -23,7 +23,6 @@ namespace WebApplication_B.Product
             else if (DropDownList1.Text == "title")
             {
                 GridView1.DataSource = SqlDataSource1;
-                //GridView1.Columns[0].ItemStyle.HorizontalAlign = HorizontalAlign.Center; 
             }
             else if(DropDownList1.Text == "condition")
             {
@@ -38,9 +37,7 @@ namespace WebApplication_B.Product
             if (TextBox1.Text == "" || DropDownList1.Text == "please select")
                 SearchResult.Visible = false;
             else
-            { 
                 SearchResult.Visible = true;    
-            }
         }
 
     }

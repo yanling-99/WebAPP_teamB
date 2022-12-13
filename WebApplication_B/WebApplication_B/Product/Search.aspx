@@ -35,9 +35,9 @@
     <br />
 
     <div style="text-align:center; font-size:18px">
-        <asp:GridView ID="GridView1" runat="server" Enabled="False" Width="1200px">
+        <asp:GridView ID="GridView1" runat="server" Width="1200px">
             <EmptyDataTemplate>
-                No Result
+                No Result.
             </EmptyDataTemplate>
             <HeaderStyle BackColor="#8B5A2B" ForeColor="#FFFAFA" VerticalAlign="Middle" />
         </asp:GridView>

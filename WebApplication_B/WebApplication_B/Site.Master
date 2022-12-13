@@ -80,8 +80,8 @@
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabe2">
-                                <li><a runat="server" href="~/Trans/transSearch">Search</a></li>
-                                <li><a runat="server" href="~/Trans/transEdit">Edit</a></li>
+                                <li><a runat="server" href="~/Transaction/transSearch">Search</a></li>
+                                <li><a runat="server" href="~/Transaction/transEdit">Edit</a></li>
                             </ul>
                         </div>
                     </div>

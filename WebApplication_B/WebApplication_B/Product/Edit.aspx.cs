@@ -9,9 +9,6 @@ namespace WebApplication_B.Product
 {
     public partial class Edit : System.Web.UI.Page
     {
-        protected void paymentIDTextBox_TextChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
