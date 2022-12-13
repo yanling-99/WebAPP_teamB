@@ -125,6 +125,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Order\Mana.aspx" />
     <Content Include="Product\Edit.aspx" />
     <Content Include="Product\Search.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -156,6 +157,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Trans\transEdit.aspx" />
+    <Content Include="Trans\transSearch.aspx" />
+    <Content Include="User\userEdit.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -188,6 +192,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Order\Mana.aspx.cs">
+      <DependentUpon>Mana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Mana.aspx.designer.cs">
+      <DependentUpon>Mana.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Product\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,6 +227,27 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Trans\transEdit.aspx.cs">
+      <DependentUpon>transEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trans\transEdit.aspx.designer.cs">
+      <DependentUpon>transEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trans\transSearch.aspx.cs">
+      <DependentUpon>transSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trans\transSearch.aspx.designer.cs">
+      <DependentUpon>transSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\userEdit.aspx.cs">
+      <DependentUpon>userEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\userEdit.aspx.designer.cs">
+      <DependentUpon>userEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

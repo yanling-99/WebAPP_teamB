@@ -80,8 +80,8 @@
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabe2">
-                                <li><a runat="server" href="#">Search</a></li>
-                                <li><a runat="server" href="#">Edit</a></li>
+                                <li><a runat="server" href="~/Trans/transSearch">Search</a></li>
+                                <li><a runat="server" href="~/Trans/transEdit">Edit</a></li>
                             </ul>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabe3">
-                                <li><a runat="server" href="#">Edit</a></li>
+                                <li><a runat="server" href="~/User/userEdit">Edit</a></li>
                             </ul>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabe4">
-                                <li><a runat="server" href="#">Edit</a></li>
+                                <li><a runat="server" href="~/Order/Mana">Management</a></li>
                             </ul>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
         </div>
         <hr / style="border-top-color:#B5B5B5">
-        <footer >
+        <footer style="text-align:center">
             <p style="color:#696969">&copy; <%: DateTime.Now.Year %> - Taiwan Tech CCE Information Technology Department — TeamB</p>
         </footer>
     </form>  

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="WebApplication_B.Product.Search" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <br /><br />
+    
     <%--<select id="Options" runat="server" name="cols" style="font-size:18px; font-family:'Times New Roman'">
         <option value="">請選擇搜尋方式</option>
         <option value="id">ID</option>
@@ -9,11 +9,12 @@
         <option value="condition">condition</option>
     </select>--%>
 
-    <br /><br />
+    <br /><br /><br />
 
     
     <p>
         <h style="font-size: 18px; font-weight: bold">Search by</h>
+        &emsp;
         <asp:DropDownList ID="DropDownList1" runat="server" width="200px" Height="30px" Font-Size="18px" >
             <asp:ListItem>please select</asp:ListItem>
             <asp:ListItem>bookID</asp:ListItem>
@@ -21,10 +22,10 @@
             <asp:ListItem>location</asp:ListItem>
             <asp:ListItem>condition</asp:ListItem>
         </asp:DropDownList>
-        <br />
-        <br />
+        <br /> <br />
 
         <h style="font-size: 18px; font-weight: bold">keyword</h>
+        &emsp;
         <asp:TextBox ID="TextBox1" runat="server" Font-Size="Larger" Width="200px" Height="30px"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" Text="Search" Width="100px" Height="35px" Font-Size="Large" OnClick="Button1_Click" />
     </p>

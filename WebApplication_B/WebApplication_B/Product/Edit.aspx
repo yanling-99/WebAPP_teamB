@@ -1,14 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" Inherits="WebApplication_B.Product.Edit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <br />
+    <br /><br /><br />
         <%-- 下拉選單 product title--%>
         &nbsp;<asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="title" DataValueField="id"  Height="30px" Font-Size="18px"></asp:DropDownList>
               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" SelectCommand="SELECT [id], [title] FROM [Product]"></asp:SqlDataSource>
 
-        <br /><br />
+        <br /><br /><br />
         <%-- product表格 --%>
     <div style=" font-size:18px">
-        <asp:FormView ID="FormView2" runat="server" DataKeyNames="id" DataSourceID="productDetail" Width="858px">
+        <asp:FormView ID="FormView2" runat="server" DataKeyNames="id" DataSourceID="productDetail" Width="1027px">
             <EditItemTemplate>
                 id:
                 <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
@@ -33,9 +33,10 @@
                 <br />
                 price:
                 <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
-                <br />
-                <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="更新" />
-                &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="取消" />
+                <br /><br />
+                <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                &nbsp;&nbsp;
+                <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </EditItemTemplate>
             <EmptyDataTemplate>
                 This product has been deleted !!
@@ -61,32 +62,34 @@
                 <br />
                 price:
                 <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
-                <br />
-                <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="插入" />
-&nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="取消" />
+                <br /><br />
+                <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
+                 &nbsp;&nbsp;
+                <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
             <ItemTemplate>
                 id:
                 <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
-                <br />
+                <br /><br />
                 title:
                 <asp:Label ID="titleLabel" runat="server" Text='<%# Bind("title") %>' />
-                <br />
+                <br /><br />
                 paymentID:
                 <asp:Label ID="paymentIDLabel" runat="server" Text='<%# Bind("paymentID") %>' />
-                <br />
+                <br /><br />
                 countryID:
                 <asp:Label ID="countryIDLabel" runat="server" Text='<%# Bind("countryID") %>' />
-                <br />
+                <br /><br />
                 condition:
                 <asp:Label ID="conditionLabel" runat="server" Text='<%# Bind("condition") %>' />
-                <br />
+                <br /><br />
                 price:
                 <asp:Label ID="priceLabel" runat="server" Text='<%# Bind("price") %>' />
-                <br />
-                <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="編輯" />
-                &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="刪除" />
-                &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="新增" />
+                <br /><br />
+                <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
+                &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
+                &emsp;&emsp;&emsp;&emsp;&emsp;
+                <asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
             </ItemTemplate>
         </asp:FormView>
         <br />
