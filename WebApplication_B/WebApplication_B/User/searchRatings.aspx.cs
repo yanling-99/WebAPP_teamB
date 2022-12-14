@@ -5,11 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication_B.Order
+namespace WebApplication_B.User
 {
-    public partial class Rating : System.Web.UI.Page
+    public partial class Search_Ratings : System.Web.UI.Page
     {
-        protected void Button_Rating_Click(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
 
         }

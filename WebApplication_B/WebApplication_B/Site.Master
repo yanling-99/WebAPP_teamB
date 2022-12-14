@@ -98,28 +98,16 @@
 
                             <ul class="dropdown-menu" aria-labelledby="dLabe3">
                                 <li><a runat="server" href="~/User/userEdit">Edit</a></li>
+                                <li><a runat="server" href="~/User/searchRatings">SearchRatings</a></li>
+                                <li><a runat="server" href="~/User/rateOthers">RateOthers</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <%--  下拉選單  Order  --%>
-                    <div class="nav navbar-nav " >
-                        <div class="dropdown">
-                            <button id="dLabe4"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-                                style="font-size:20px; width:90px; height:30px; border-color:transparent; background-color:#8B5A2B">
-                                Order
-                                <span class="caret"></span>
-                            </button>
-
-                            <ul class="dropdown-menu" aria-labelledby="dLabe4">
-                                <li><a runat="server" href="~/Order/Mana">Management</a></li>
-                                <li><a runat="server" href="~/Order/Rating">Rating</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
+                   
                     <%-- 單一選單 About Contact--%>
                     <ul class="nav navbar-nav " >
+                        <li><a runat="server" href="~/Order/Mana">Order</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>

@@ -7,48 +7,12 @@
 // </自動產生>
 //------------------------------------------------------------------------------
 
-namespace WebApplication_B.Order
+namespace WebApplication_B.User
 {
 
 
-    public partial class Rating
+    public partial class Rate_others
     {
-
-        /// <summary>
-        /// TextBoxRating 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxRating;
-
-        /// <summary>
-        /// Button_Rating 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_Rating;
-
-        /// <summary>
-        /// GridView1 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
-
-        /// <summary>
-        /// SqlDataSource_Rat_UserID 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Rat_UserID;
 
         /// <summary>
         /// TextBoxRating0 控制項。
@@ -112,6 +76,15 @@ namespace WebApplication_B.Order
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.FormView FormView3;
+
+        /// <summary>
+        /// FormView4 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FormView FormView4;
 
         /// <summary>
         /// RatingForm0 控制項。

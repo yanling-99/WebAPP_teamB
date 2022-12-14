@@ -126,7 +126,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Order\Mana.aspx" />
-    <Content Include="Order\Rating.aspx" />
     <Content Include="Product\Edit.aspx" />
     <Content Include="Product\Search.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -160,6 +159,8 @@
     <Content Include="Site.Master" />
     <Content Include="Transaction\transEdit.aspx" />
     <Content Include="Transaction\transSearch.aspx" />
+    <Content Include="User\rateOthers.aspx" />
+    <Content Include="User\searchRatings.aspx" />
     <Content Include="User\userEdit.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -199,13 +200,6 @@
     </Compile>
     <Compile Include="Order\Mana.aspx.designer.cs">
       <DependentUpon>Mana.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Order\Rating.aspx.cs">
-      <DependentUpon>Rating.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Order\Rating.aspx.designer.cs">
-      <DependentUpon>Rating.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
@@ -249,6 +243,20 @@
     </Compile>
     <Compile Include="Transaction\transSearch.aspx.designer.cs">
       <DependentUpon>transSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\rateOthers.aspx.cs">
+      <DependentUpon>rateOthers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\rateOthers.aspx.designer.cs">
+      <DependentUpon>rateOthers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\searchRatings.aspx.cs">
+      <DependentUpon>searchRatings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\searchRatings.aspx.designer.cs">
+      <DependentUpon>searchRatings.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\userEdit.aspx.cs">
       <DependentUpon>userEdit.aspx</DependentUpon>
