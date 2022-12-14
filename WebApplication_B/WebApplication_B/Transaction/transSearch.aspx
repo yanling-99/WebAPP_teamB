@@ -20,7 +20,7 @@
         <h style="font-size: 18px; font-weight: bold">keyword</h>
         &emsp;
         <asp:TextBox ID="keyTB" runat="server" Font-Size="Larger" Width="200px" Height="30px"></asp:TextBox>
-        <asp:Button ID="searchBtn" runat="server" Text="Search" Width="100px" Height="35px" Font-Size="Large" OnClick="searchBtn_Click"/>
+        &emsp;<asp:Button ID="searchBtn" runat="server" Text="Search" Width="100px" Height="35px" Font-Size="Large" OnClick="searchBtn_Click" BorderColor="Transparent"/>
     </p>
 
     <%-- Search Result 文字--%>

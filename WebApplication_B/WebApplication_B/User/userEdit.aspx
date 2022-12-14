@@ -5,7 +5,7 @@
 
     <h style="font-size: 18px; font-weight: bold">Enter your email</h><br />
     <asp:TextBox ID="FirstnameTB" runat="server" Font-Size="Larger" Width="250px" Height="30px"></asp:TextBox>
-    <asp:Button ID="FirstnameBtn" runat="server"  Text="Search" Width="100px" Height="35px" Font-Size="Large"/>
+    &emsp;<asp:Button ID="FirstnameBtn" runat="server"  Text="Search" Width="100px" Height="35px" Font-Size="Large" BorderColor="Transparent"/>
 
     <br /><br /><br />
     

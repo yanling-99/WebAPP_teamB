@@ -13,5 +13,15 @@ namespace WebApplication_B.Trans
         {
 
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            GridView1.Visible= false;
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            GridView1.Visible = true;
+        }
     }
 }

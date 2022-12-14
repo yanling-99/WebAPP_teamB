@@ -40,8 +40,8 @@
             </div>
 
             <div class="col-md-6">
-                <label for="Message" style="font-size:20px">Message</label><br />
-                <textarea name="message" rows="5" cols="30"></textarea>
+                <label for="Message" style="font-size:20px ">Message</label><br />
+                <textarea name="message" rows="5" cols="30" style="width:300px"></textarea>
                 <br /><br /><br />
 
                 <input id="SubmitMessage" type="submit" value="Submit" style="width: 100px;height: 30px;background-color: snow;border-color: lightgray;color: #8B5A2B;font-size: 16px" ><br />

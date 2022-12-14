@@ -9,10 +9,6 @@ namespace WebApplication_B.Product
 {
     public partial class Search : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -39,6 +35,5 @@ namespace WebApplication_B.Product
             else
                 SearchResult.Visible = true;    
         }
-
     }
 }
