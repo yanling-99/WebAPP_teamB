@@ -41,6 +41,7 @@
                 <br />
                 buyerID:
                 <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="user2" DataTextField="id" DataValueField="id" SelectedValue='<%# Bind("buyerID") %>' Width="200px">
+                  
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="user2" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
                     SelectCommand="SELECT [id] FROM [Users]"></asp:SqlDataSource>

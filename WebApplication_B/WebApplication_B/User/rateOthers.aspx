@@ -91,7 +91,7 @@ UPDATE [Ratings] SET [rating] = @rating,  [comment] = @comment WHERE [userID] = 
     <h style="font-size: 22px; font-weight: bold">Rate other users.&nbsp; </h>
     <br /><br />
 
-    <asp:FormView ID="FormView3" runat="server" DataKeyNames="yourID,userID" DataSourceID="RatingForm0" Font-Size="Large">
+    <asp:FormView ID="FormView5" runat="server" DataKeyNames="yourID,userID" DataSourceID="RatingForm0" Font-Size="Large">
         <EditItemTemplate>
             yourID:
             <asp:Label ID="yourIDLabel1" runat="server" Text='<%# Eval("yourID") %>' />
@@ -111,20 +111,26 @@ UPDATE [Ratings] SET [rating] = @rating,  [comment] = @comment WHERE [userID] = 
         <EmptyDataTemplate>
             Add a rating!
             <br /><br />
-            <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
+            <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Click here to add a Rating" />
         </EmptyDataTemplate>
         <InsertItemTemplate>
-            yourID:
-            <asp:TextBox ID="yourIDTextBox" runat="server" Text='<%# Bind("yourID") %>' />
+            yourID:&nbsp;
+            <asp:TextBox ID="yourIDTextBox" runat="server" Text='<%# Bind("yourID") %>' Width="175px" />
             <br />
-            userID:
+            userID:&nbsp;
             <asp:TextBox ID="userIDTextBox" runat="server" Text='<%# Bind("userID") %>' />
             <br />
-            rating:
-            <asp:TextBox ID="ratingTextBox" runat="server" Text='<%# Bind("rating") %>' />
+            rating:&nbsp;
+            <asp:DropDownList ID="DropDownList1" runat="server" SelectedValue='<%# Bind("rating") %>' Width="122px">
+                <asp:ListItem Value="1"></asp:ListItem>
+                <asp:ListItem Value="2"></asp:ListItem>
+                <asp:ListItem Value="3"></asp:ListItem>
+                <asp:ListItem Value="4"></asp:ListItem>
+                <asp:ListItem Value="5"></asp:ListItem>
+            </asp:DropDownList>
             <br />
             comment:
-            <asp:TextBox ID="commentTextBox" runat="server" Text='<%# Bind("comment") %>' />
+            <asp:TextBox ID="commentTextBox0" runat="server" Text='<%# Bind("comment") %>' Width="319px" />
             <br />
             <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -142,7 +148,7 @@ UPDATE [Ratings] SET [rating] = @rating,  [comment] = @comment WHERE [userID] = 
             comment:
             <asp:Label ID="commentLabel" runat="server" Text='<%# Bind("comment") %>' />
             <br />
-            <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
+            <asp:LinkButton ID="NewButton0" runat="server" CausesValidation="False" CommandName="New" Text="Click here to add a Rating" />
         </ItemTemplate>
     </asp:FormView>
       

@@ -302,3 +302,30 @@ C:\Users\E2-417\Desktop\課堂\軟工\HW 05\WebApplication_B (added rat)\WebAppl
 C:\Users\E2-417\Desktop\課堂\軟工\HW 05\WebApplication_B (added rat)\WebApplication_B\obj\Debug\WebApplication_B.csproj.CopyComplete
 C:\Users\E2-417\Desktop\課堂\軟工\HW 05\WebApplication_B (added rat)\WebApplication_B\obj\Debug\WebApplication_B.dll
 C:\Users\E2-417\Desktop\課堂\軟工\HW 05\WebApplication_B (added rat)\WebApplication_B\obj\Debug\WebApplication_B.pdb
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\WebApplication_B.dll.config
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\WebApplication_B.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\WebApplication_B.pdb
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Antlr3.Runtime.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Newtonsoft.Json.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\System.Web.Optimization.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\WebGrease.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\System.Web.Optimization.xml
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Newtonsoft.Json.xml
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Antlr3.Runtime.pdb
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\zh-Hant\System.Web.Optimization.resources.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\bin\zh-Hant\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\obj\Debug\WebApplication_B.csproj.AssemblyReference.cache
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\obj\Debug\WebApplication_B.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\obj\Debug\WebApplication_B.csproj.CopyComplete
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\obj\Debug\WebApplication_B.dll
+C:\Users\Daniel\OneDrive\桌面\WebAPP\WebApplication_B\WebApplication_B\obj\Debug\WebApplication_B.pdb
