@@ -23,5 +23,7 @@ namespace WebApplication_B.Trans
         {
             GridView1.Visible = true;
         }
+
+ 
     }
 }

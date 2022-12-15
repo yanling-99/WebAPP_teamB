@@ -10,9 +10,10 @@
     &emsp;<asp:Button ID="Button2" runat="server" Text="Search" Width="100px" Height="35px" Font-Size="Large" BorderColor="Transparent"/>
     <br /><br />
 
-    <%-- 可編輯、新增FormView1 --%>
+    <%-- FormView1 --%>
     <div style="font-size:18px">
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="transID" DataSourceID="add_edit" Width="489px">
+            <%-- 編輯 --%>
             <EditItemTemplate>
                 transID:
                 <asp:Label ID="transIDLabel1" runat="server" Text='<%# Eval("transID") %>' />
@@ -24,10 +25,10 @@
                     SelectCommand="SELECT [id] FROM [Users]"></asp:SqlDataSource>
                 <br />
                 productID:
-                <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="product" DataTextField="id" DataValueField="id" SelectedValue='<%# Bind("productID") %>' Width="200px">
+                <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="product" DataTextField="id" DataValueField="id" Width="200px" SelectedValue='<%# Bind("productID") %>'>
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="product" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
-                    SelectCommand="SELECT id FROM [Product]"></asp:SqlDataSource>
+                    SelectCommand="SELECT id FROM [Product] "></asp:SqlDataSource>
                 <br />
                 price:
                 <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
@@ -43,14 +44,15 @@
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="user2" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
                     SelectCommand="SELECT [id] FROM [Users]"></asp:SqlDataSource>
-                <br />
+                <br /><br />
                 <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update"  />
-                &nbsp;&nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                &nbsp;&nbsp;&nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </EditItemTemplate>
             <EmptyDataTemplate>
-                No result.<br />
+                No result.<br /><br />
                 <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New Trans" />
             </EmptyDataTemplate>
+            <%-- 新增 --%>
             <InsertItemTemplate>
                 sellerID:
                 <asp:DropDownList ID="DropDownList5" runat="server" DataSourceID="user" DataTextField="id" DataValueField="id" SelectedValue='<%# Bind("sellerID") %>' Width="200px">
@@ -59,10 +61,10 @@
                     SelectCommand="SELECT [id] FROM [Users]"></asp:SqlDataSource>
                 <br />
                 productID:
-                <asp:DropDownList ID="DropDownList6" runat="server" DataSourceID="product" DataTextField="id" DataValueField="id" SelectedValue='<%# Bind("productID") %>' Width="200px">
+                <asp:DropDownList ID="DropDownList6" runat="server" DataSourceID="product" DataTextField="id" DataValueField="id" Width="200px" SelectedValue='<%# Bind("productID") %>'>
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="product" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
-                    SelectCommand="SELECT [id] FROM [Product] "></asp:SqlDataSource>
+                    SelectCommand="SELECT [id] FROM [Product]"></asp:SqlDataSource>
                 <br />
                 price:
                 <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
@@ -73,15 +75,12 @@
                 <asp:SqlDataSource ID="status" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
                     SelectCommand="SELECT [id], [description] FROM [TransStatus]"></asp:SqlDataSource>
                 <br />
-                buyerID:
-                <asp:DropDownList ID="DropDownList8" runat="server" DataSourceID="user2" DataTextField="id" DataValueField="id" SelectedValue='<%# Bind("buyerID") %>' Width="200px">
-                </asp:DropDownList>
-                <asp:SqlDataSource ID="user2" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
-                    SelectCommand="SELECT [id] FROM [Users]"></asp:SqlDataSource>
-                <br />
+                buyerID:&nbsp;<asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("buyerID") %>'></asp:TextBox>
+                <br /> <br />
                 <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                &nbsp;&nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                &nbsp;&nbsp;&nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
+            <%-- item --%>
             <ItemTemplate>
                 transID:
                 <asp:Label ID="transIDLabel" runat="server" Text='<%# Eval("transID") %>' />
