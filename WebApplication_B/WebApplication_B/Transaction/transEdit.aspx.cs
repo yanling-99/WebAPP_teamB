@@ -9,10 +9,7 @@ namespace WebApplication_B.Trans
 {
     public partial class Edit : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
 
-        }
 
         protected void Button3_Click(object sender, EventArgs e)
         {

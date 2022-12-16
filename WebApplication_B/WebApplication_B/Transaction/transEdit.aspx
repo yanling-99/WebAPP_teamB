@@ -12,7 +12,7 @@
 
     <%-- FormView1 --%>
     <div style="font-size:18px">
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="transID" DataSourceID="add_edit" Width="489px">
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="transID" DataSourceID="add_edit" Width="600px">
             <%-- 編輯 --%>
             <EditItemTemplate>
                 transID:
@@ -28,7 +28,7 @@
                 <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="product" DataTextField="id" DataValueField="id" Width="200px" SelectedValue='<%# Bind("productID") %>'>
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="product" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
-                    SelectCommand="SELECT id FROM [Product] "></asp:SqlDataSource>
+                    SelectCommand="SELECT id FROM [Product] ORDER BY id DESC"></asp:SqlDataSource>
                 <br />
                 price:
                 <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
@@ -41,6 +41,8 @@
                 <br />
                 buyerID:
                 <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="user2" DataTextField="id" DataValueField="id" SelectedValue='<%# Bind("buyerID") %>' Width="200px">
+                  
+                    <asp:ListItem Value="">none</asp:ListItem>
                   
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="user2" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
@@ -65,7 +67,7 @@
                 <asp:DropDownList ID="DropDownList6" runat="server" DataSourceID="product" DataTextField="id" DataValueField="id" Width="200px" SelectedValue='<%# Bind("productID") %>'>
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="product" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
-                    SelectCommand="SELECT [id] FROM [Product]"></asp:SqlDataSource>
+                    SelectCommand="SELECT id FROM [Product] ORDER BY id DESC"></asp:SqlDataSource>
                 <br />
                 price:
                 <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
@@ -74,10 +76,13 @@
                 <asp:DropDownList ID="DropDownList7" runat="server" DataSourceID="status" DataTextField="description" DataValueField="id" SelectedValue='<%# Bind("statusID") %>' Width="200px">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="status" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
-                    SelectCommand="SELECT [id], [description] FROM [TransStatus]"></asp:SqlDataSource>
+                    SelectCommand="SELECT [id], [description] FROM [TransStatus] ORDER BY [id] DESC"></asp:SqlDataSource>
                 <br />
-                buyerID:&nbsp;<asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("buyerID") %>'></asp:TextBox>
-                <br /> <br />
+                buyerID:
+                <asp:DropDownList ID="DropDownList8" runat="server" DataSourceID="users" DataTextField="id" DataValueField="id" SelectedValue='<%# Bind("buyerID") %>' Width="200px">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="users" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" SelectCommand="SELECT [id] FROM [Users]"></asp:SqlDataSource>
+                (Select 0 if there is no buyer yet)<br /> <br />
                 <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                 &nbsp;&nbsp;&nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
@@ -145,7 +150,7 @@
     </asp:RadioButtonList>
     <%-- 按鈕 --%>
     <br />
-    <asp:Button ID="Button1" runat="server" Text="refresh" BorderColor="Transparent" Width="100px" Height="35px" Font-Size="Large" OnClick="Button1_Click"/>
+    <asp:Button ID="Button1" runat="server" Text="Refresh" BorderColor="Transparent" Width="100px" Height="35px" Font-Size="Large" OnClick="Button1_Click"/>
     &emsp; <asp:Button ID="Button3" runat="server" Text="Close" BorderColor="Transparent" Width="100px" Height="35px" Font-Size="Large" OnClick="Button3_Click"/>
     <br /><br />
     <%-- 表格 --%>
@@ -165,7 +170,7 @@
         </asp:GridView>
     </div>
 
-    <asp:SqlDataSource ID="selled" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" SelectCommand="SELECT [transID], [sellerID], [productID], [price], [buyerID] FROM [Transaction] WHERE ([statusID] = @statusID)" DeleteCommand="DELETE FROM [Transaction] WHERE [transID] = @transID" InsertCommand="INSERT INTO [Transaction] ([sellerID], [productID], [price], [buyerID]) VALUES (@sellerID, @productID, @price, @buyerID)" UpdateCommand="UPDATE [Transaction] SET [sellerID] = @sellerID, [productID] = @productID, [price] = @price, [buyerID] = @buyerID WHERE [transID] = @transID">
+    <asp:SqlDataSource ID="selled" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" SelectCommand="SELECT [transID], [sellerID], [productID], [price], [buyerID] FROM [Transaction] WHERE ([statusID] = @statusID) ORDER BY [transID] DESC" DeleteCommand="DELETE FROM [Transaction] WHERE [transID] = @transID" InsertCommand="INSERT INTO [Transaction] ([sellerID], [productID], [price], [buyerID]) VALUES (@sellerID, @productID, @price, @buyerID)" UpdateCommand="UPDATE [Transaction] SET [sellerID] = @sellerID, [productID] = @productID, [price] = @price, [buyerID] = @buyerID WHERE [transID] = @transID">
         <DeleteParameters>
             <asp:Parameter Name="transID" Type="Int32" />
         </DeleteParameters>

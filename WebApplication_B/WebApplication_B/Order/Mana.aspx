@@ -11,7 +11,7 @@
         <h style="font-size: 20px">Select a transID:&nbsp; </h>
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="trans_select" DataTextField="transID" DataValueField="transID" Font-Size="Large" Height="25px" Width="300px">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="trans_select" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" SelectCommand="SELECT [transID] FROM [Transaction] WHERE ([buyerID] IS NOT NULL);"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="trans_select" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" SelectCommand="SELECT [transID] FROM [Transaction] WHERE ([buyerID] IS NOT NULL) ORDER BY transID  DESC;"></asp:SqlDataSource>
         &nbsp<asp:Button ID="Button1" runat="server" DataSourceID="order_grid" CommandName="Insert" Text="Search" Width="100px" Height="35px" Font-Size="Large" BorderColor="Transparent"/>
     </p>
     <p>
@@ -36,6 +36,7 @@
                 <asp:TextBox ID="dateTextBox" runat="server" Text='<%# Bind("date") %>' />
                 &nbsp;(ex: 2022/11/30)<br />logID:
                 <asp:DropDownList ID="DropDownList2" runat="server" SelectedValue='<%# Bind("logID") %>'>
+                    <asp:ListItem Value="">(Please select)</asp:ListItem>
                     <asp:ListItem Value="1">FedEx</asp:ListItem>
                     <asp:ListItem Value="2">UPS</asp:ListItem>
                     <asp:ListItem Value="3">DHL</asp:ListItem>
@@ -48,31 +49,15 @@
             </EditItemTemplate>
             <EmptyDataTemplate>
                 This order does not exist yet.
+                <br />
+                <br />
+                Already have an order?<br /> Try press this 
+                &quot;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Refresh" />&quot; button.
             </EmptyDataTemplate>
             <InsertItemTemplate>
-                transID:
-                <asp:TextBox ID="transIDTextBox" runat="server" Text='<%# Bind("transID") %>' />
-                <br />
-                sellerID:
-                <asp:TextBox ID="sellerIDTextBox" runat="server" Text='<%# Bind("sellerID") %>' />
-                <br />
-                buyerID:
-                <asp:TextBox ID="buyerIDTextBox" runat="server" Text='<%# Bind("buyerID") %>' />
-                <br />
-                productID:
-                <asp:TextBox ID="productIDTextBox" runat="server" Text='<%# Bind("productID") %>' />
-                <br />
-                price:
-                <asp:TextBox ID="priceTextBox" runat="server" Text='<%# Bind("price") %>' />
-                <br />
-                date:
-                <asp:TextBox ID="dateTextBox" runat="server" Text='<%# Bind("date") %>' />
-                <br />
-                logID:
-                <asp:TextBox ID="logIDTextBox" runat="server" Text='<%# Bind("logID") %>' />
-                <br />
-                <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="插入" />
-                &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="取消" />
+                &nbsp;Order is ready to refresh<br />&nbsp;Please press &quot;OK&quot; to refresh<br /> <br />
+                &nbsp;<asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="OK" />
+                &nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
             <ItemTemplate>
                 Current transID:
@@ -116,10 +101,13 @@
             </Columns>
             <HeaderStyle BackColor="#8B5A2B" ForeColor="#FFFAFA" VerticalAlign="Middle" />
         </asp:GridView>
-        <asp:SqlDataSource ID="order_grid" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" SelectCommand="SELECT [transID], [sellerID], [buyerID], [productID], [price], [date], [logID] FROM [order] WHERE ([transID] = @transID)" InsertCommand="INSERT INTO [order] ([transID], [sellerID], [buyerID], [productID], [price]) 
-SELECT [transID], [sellerID], [buyerID], [productID], [price] 
-FROM [Transaction] 
-WHERE [buyerID] IS NOT NULL AND [transID] NOT IN (SELECT transID FROM [order]);" UpdateCommand="UPDATE [order] SET [date] = @date, [logID] = @logID WHERE [transID] = @transID">
+        <asp:SqlDataSource ID="order_grid" runat="server" ConnectionString="<%$ ConnectionStrings:TextbookChangedPlatformConnectionString %>" 
+            SelectCommand="SELECT [transID], [sellerID], [buyerID], [productID], [price], [date], [logID] FROM [order] WHERE ([transID] = @transID)" 
+            InsertCommand="INSERT INTO [order] ([transID], [sellerID], [buyerID], [productID], [price]) 
+            SELECT [transID], [sellerID], [buyerID], [productID], [price] 
+            FROM [Transaction] 
+            WHERE [buyerID] IS NOT NULL AND [buyerID] !=0 AND [transID] NOT IN (SELECT transID FROM [order]);" 
+            UpdateCommand="UPDATE [order] SET [date] = @date, [logID] = @logID WHERE [transID] = @transID">
             <SelectParameters>
                 <asp:ControlParameter ControlID="DropDownList1" Name="transID" PropertyName="SelectedValue" />
             </SelectParameters>
