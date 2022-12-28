@@ -15,6 +15,15 @@ namespace WebApplication_B.Product
     {
 
         /// <summary>
+        /// titleTxt 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label titleTxt;
+
+        /// <summary>
         /// DropDownList1 控制項。
         /// </summary>
         /// <remarks>
@@ -42,13 +51,22 @@ namespace WebApplication_B.Product
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// SearchResult 控制項。
+        /// HyperLink1 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SearchResult;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+
+        /// <summary>
+        /// conditiontxt 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label conditiontxt;
 
         /// <summary>
         /// GridView1 控制項。
@@ -58,6 +76,15 @@ namespace WebApplication_B.Product
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
+
+        /// <summary>
+        /// SqlDataSource5 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource5;
 
         /// <summary>
         /// SqlDataSource1 控制項。

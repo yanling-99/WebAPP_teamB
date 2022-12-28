@@ -51,6 +51,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -126,8 +127,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Order\Mana.aspx" />
-    <Content Include="Product\Edit.aspx" />
-    <Content Include="Product\Search.aspx" />
+    <Content Include="Product\SellBook.aspx" />
+    <Content Include="Product\SearchBook.aspx" />
+    <Content Include="Product\ShoppingList.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -201,19 +203,26 @@
     <Compile Include="Order\Mana.aspx.designer.cs">
       <DependentUpon>Mana.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
+    <Compile Include="Product\SellBook.aspx.cs">
+      <DependentUpon>SellBook.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Product\Edit.aspx.designer.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
+    <Compile Include="Product\SellBook.aspx.designer.cs">
+      <DependentUpon>SellBook.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product\Search.aspx.cs">
-      <DependentUpon>Search.aspx</DependentUpon>
+    <Compile Include="Product\SearchBook.aspx.cs">
+      <DependentUpon>SearchBook.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Product\Search.aspx.designer.cs">
-      <DependentUpon>Search.aspx</DependentUpon>
+    <Compile Include="Product\SearchBook.aspx.designer.cs">
+      <DependentUpon>SearchBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\ShoppingList.aspx.cs">
+      <DependentUpon>ShoppingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\ShoppingList.aspx.designer.cs">
+      <DependentUpon>ShoppingList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

@@ -54,24 +54,26 @@
 
                 <%-- 下拉選單 --%>
                 <div class="collapse navbar-collapse" >
-                    <%-- 下拉選單  Product --%>
+                    <%-- 下拉選單  Transaction --%>
                     <div class="nav navbar-nav " style="padding-left:20px">
                         <div class="dropdown">
                             <button id="dLabel"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
-                                style="font-size:20px; width:120px; height:30px; border-color:transparent; background-color:#8B5A2B">
-                                Product
+                                style="font-size:20px; width:160px; height:30px; border-color:transparent; background-color:#8B5A2B">
+                                Transaction
                                 <span class="caret"></span>
                             </button>
 
                             <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li><a runat="server" href="~/Product/Search">Search</a></li>
-                                <li><a runat="server" href="~/Product/Edit">Edit</a></li>
+                                <li><a runat="server" href="~/Product/SellBook">Sell Book</a></li>
+                                <li><a runat="server" href="~/Product/SearchBook">Search Book</a></li>
+                                <li><a runat="server" href="~/Product/ShoppingList">Shopping Cart</a></li> 
+
                             </ul>
                         </div>
                     </div>
 
                     <%--  下拉選單  Trans  --%>
-                    <div class="nav navbar-nav " >
+                    <%--<div class="nav navbar-nav " >
                         <div class="dropdown">
                             <button id="dLabe2"  type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
                                 style="font-size:20px; width:160px; height:30px; border-color:transparent; background-color:#8B5A2B">
@@ -84,7 +86,7 @@
                                 <li><a runat="server" href="~/Transaction/transEdit">Edit</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>--%>
 
 
                      <%--  下拉選單  Users  --%>
