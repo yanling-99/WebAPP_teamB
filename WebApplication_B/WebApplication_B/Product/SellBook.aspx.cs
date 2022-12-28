@@ -31,8 +31,8 @@ namespace WebApplication_B.Product
                 AddBookBtn.Visible = false;
                 Panel1.Visible = true;
 
-                transIdTxt2.Text = "Auto generate";
-                bookIdTxt2.Text = "Auto generate";
+                transIdTxt2.Text = "Auto generated";
+                bookIdTxt2.Text = "Auto generated";
             }
         }
         protected int sqlConnect_getPk(string sql)

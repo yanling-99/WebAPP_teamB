@@ -86,6 +86,26 @@ namespace WebApplication_B.Product
             //Response.Redirect(Request.Url.ToString()); FilePath
         }
 
-
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            if (DropDownList1.Text == "bookID")
+            {
+                GridView1.DataSource = SqlDataSource2;
+            }
+            else if (DropDownList1.Text == "title")
+            {
+                GridView1.DataSource = SqlDataSource1;
+            }
+            else if (DropDownList1.Text == "condition")
+            {
+                GridView1.DataSource = SqlDataSource4;
+            }
+            else if (DropDownList1.Text == "location")
+            {
+                GridView1.DataSource = SqlDataSource3;
+            }
+            GridView1.DataBind();
+        }
     }
 }

@@ -29,7 +29,7 @@
     <br />
 
     <div style="text-align:center; font-size:18px">
-        <asp:GridView ID="GridView1" runat="server" Width="1200px" OnRowDataBound="GridView1_RowDataBound" AutoGenerateColumns="False" >
+        <asp:GridView ID="GridView1" runat="server" Width="1330px" OnRowDataBound="GridView1_RowDataBound" AutoGenerateColumns="False" AllowPaging="True" OnPageIndexChanging="GridView1_PageIndexChanging">
             <Columns>
                 <asp:TemplateField ShowHeader="False" HeaderStyle-BackColor="#8B5A2B">
                     <ItemTemplate>
@@ -37,7 +37,7 @@
                     </ItemTemplate>
                     <ItemStyle Width="100px" />
                 </asp:TemplateField>
-                <asp:BoundField DataField="BookID" HeaderText="BookID" SortExpression="BookID" HeaderStyle-BackColor="#8B5A2B"/>
+                <asp:BoundField DataField="BookID" HeaderText="BookID" SortExpression="BookID" HeaderStyle-BackColor="#8B5A2B" ItemStyle-Height="60px"/>
                 <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" HeaderStyle-BackColor="#8B5A2B"/>
                 <asp:BoundField DataField="Payment" HeaderText="Payment" SortExpression="Payment" HeaderStyle-BackColor="#8B5A2B"/>
                 <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" HeaderStyle-BackColor="#8B5A2B"/>

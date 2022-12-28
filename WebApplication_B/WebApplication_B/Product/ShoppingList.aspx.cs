@@ -112,7 +112,7 @@ namespace WebApplication_B.Product
                     string sql = $"DELETE FROM shopping WHERE BookID =" + bookIDValue[i];
                     sqlConnect(sql);
                 }
-                MessageBox.Show("Delete Sucessfully!");
+                Response.Write("<Script language='JavaScript'>alert('Delete Sucessfully!');</Script>");
                 
                 //跟cancel做一樣的事
                 SelectAllBtn.Visible = false;
